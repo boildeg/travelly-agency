@@ -1,0 +1,324 @@
+/* Global style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+button {
+  padding: 2rem 6rem;
+  background: #4c6e97;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background 1s ease-in-out;
+  border-radius: 2rem;
+}
+button:hover {
+  background: #27394e;
+}
+
+/* Nav Section With HERO */
+.main-head {
+  background: #223246;
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  min-height: 5vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: normal;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
+    url("/img/landing-page.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h3 {
+  padding: 5rem;
+}
+
+/* locations SECTION */
+
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("/img/new-york-page.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.locations-head {
+  width: 90%;
+  margin: auto;
+}
+
+.locations-head h2 {
+  padding: 2rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+}
+.locations-head h3 {
+  padding: 4rem 0rem;
+  background: linear-gradient(#131c27, #da796a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+.moving-cloud-1 {
+  animation: cloudAnimation 8s infinite alternate ease-in-out;
+}
+.moving-cloud-2 {
+  top: 10%;
+  z-index: -1;
+  opacity: 0.5;
+  animation: cloudAnimation 9.5s infinite alternate ease-in-out;
+}
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* Benefits section*/
+
+.benefits-head {
+  background: #223246;
+  padding: 3rem;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.benefits-head h2 {
+  padding: 1rem;
+}
+
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 2rem;
+  text-align: center;
+  flex: 1 1 30rem;
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.cards img {
+  max-width: 15%;
+  margin: 2rem;
+}
+.card h4,
+p {
+  padding: 2rem;
+}
+.card-icon {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  background: #4c6e97;
+}
+
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/img/contact-mountain.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wraper {
+  background: #223246c1;
+  width: 25%;
+  color: white;
+  border-radius: 20px;
+}
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+.message,
+.name-form,
+.email-form {
+  padding: 2rem;
+  text-align: center;
+}
+.form-wraper label {
+  margin: 0rem 6rem;
+}
+.form-wraper button {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 8rem;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+footer {
+  color: white;
+  background: #27394e;
+}
+.footer-wraper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+footer h5 {
+  flex: 1 1 40rem;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 10rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button:focus {
+  background: #173759;
+}
+
+.msg-input {
+  min-height: 20vh;
+}
+
+/* Media query*/
+@media screen and (max-width: 935px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    padding: 2rem;
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  .cloud {
+    height: 40rem;
+  }
+  .moving-cloud-1 {
+    z-index: -1;
+  }
+  .moving-cloud-2 {
+    z-index: -2;
+  }
+  .locations-head h3 {
+    background: #2232468a;
+    -webkit-text-fill-color: rgba(231, 236, 238, 0.817);
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .form-wraper {
+    width: 50%;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h5 {
+    padding-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 433px) {
+  .form-wraper {
+    width: 60%;
+  }
+  .form-head h2 {
+    padding-right: 6rem;
+    text-align: center;
+  }
+}
